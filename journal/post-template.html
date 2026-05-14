@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--
+============================================================
+BLOG POST TEMPLATE — Pehnawa Panjab
+============================================================
+Save this as: journal/your-post-slug.html
+
+Replace ALL placeholders marked with {{ }}:
+  {{POST_TITLE}}          — full SEO title (60-70 chars)
+  {{META_DESC}}           — 150-160 char description
+  {{KEYWORDS}}            — comma-separated keywords
+  {{SLUG}}                — URL slug (lowercase, hyphenated)
+  {{HERO_IMAGE}}          — full URL to hero image
+  {{HERO_ALT}}            — descriptive alt text for hero
+  {{CATEGORY}}            — Craft Heritage / Styling / Care Guide / etc.
+  {{READ_TIME}}           — e.g. "8 min read"
+  {{PUBLISHED_DATE}}      — ISO date e.g. "2026-05-12"
+  {{DISPLAY_DATE}}        — e.g. "12 May 2026"
+  {{H1_TITLE}}            — the H1 (can match POST_TITLE or be shorter)
+  {{INTRO_PARAGRAPH}}     — first paragraph (100-150 words)
+  {{BODY_HTML}}           — main body content (H2s, paragraphs, etc.)
+
+For Article schema below, replace the same placeholders.
+============================================================
+-->
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{POST_TITLE}}</title>
+    <meta name="description" content="{{META_DESC}}">
+    <meta name="keywords" content="{{KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://lavleenkaur-13.github.io/pehnawapanjab/journal/{{SLUG}}.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{POST_TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:url" content="https://lavleenkaur-13.github.io/pehnawapanjab/journal/{{SLUG}}.html">
+    <meta property="og:image" content="{{HERO_IMAGE}}">
+    <meta property="og:site_name" content="Pehnawa Panjab">
+    <meta property="article:published_time" content="{{PUBLISHED_DATE}}">
+    <meta property="article:section" content="{{CATEGORY}}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{POST_TITLE}}">
+    <meta name="twitter:description" content="{{META_DESC}}">
+    <meta name="twitter:image" content="{{HERO_IMAGE}}">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{H1_TITLE}}",
+        "description": "{{META_DESC}}",
+        "image": "{{HERO_IMAGE}}",
+        "datePublished": "{{PUBLISHED_DATE}}",
+        "dateModified": "{{PUBLISHED_DATE}}",
+        "author": {
+            "@type": "Organization",
+            "name": "Pehnawa Panjab"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Pehnawa Panjab",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://lavleenkaur-13.github.io/pehnawapanjab/logo-pehnawapanjab.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://lavleenkaur-13.github.io/pehnawapanjab/journal/{{SLUG}}.html"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lavleenkaur-13.github.io/pehnawapanjab/" },
+            { "@type": "ListItem", "position": 2, "name": "Journal", "item": "https://lavleenkaur-13.github.io/pehnawapanjab/journal/" },
+            { "@type": "ListItem", "position": 3, "name": "{{H1_TITLE}}", "item": "https://lavleenkaur-13.github.io/pehnawapanjab/journal/{{SLUG}}.html" }
+        ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../logo-pehnawapanjab.png">
+</head>
+
+<body class="text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200/80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="inline-flex items-center gap-3" aria-label="Pehnawa Panjab Home">
+                <img src="../logo-pehnawapanjab.png" alt="Pehnawa Panjab logo"
+                    class="h-20 w-12 object-contain rounded-full">
+                <span class="text-2xl font-cormorant font-medium tracking-widest text-brand-heading">PEHNAWA
+                    PANJAB</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="../index.html#home" class="nav-link uppercase tracking-wider text-sm">Home</a>
+                <a href="../index.html#shop" class="nav-link uppercase tracking-wider text-sm">Shop</a>
+                <a href="../journal/index.html" class="nav-link uppercase tracking-wider text-sm">Journal</a>
+                <a href="../index.html#about" class="nav-link uppercase tracking-wider text-sm">Our Story</a>
+                <a href="../index.html#contact" class="nav-link uppercase tracking-wider text-sm">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <article class="container mx-auto px-6 py-12 max-w-3xl">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="text-sm mb-8">
+            <ol class="flex items-center gap-2 text-gray-500">
+                <li><a href="../index.html" class="hover:text-brand-heading">Home</a></li>
+                <li>/</li>
+                <li><a href="index.html" class="hover:text-brand-heading">Journal</a></li>
+                <li>/</li>
+                <li class="text-brand-heading">{{H1_TITLE}}</li>
+            </ol>
+        </nav>
+
+        <header class="mb-10">
+            <p class="text-xs uppercase tracking-widest text-gray-500 mb-3">{{CATEGORY}} · {{READ_TIME}}</p>
+            <h1 class="text-4xl md:text-5xl font-cormorant font-medium mb-4 text-brand-heading leading-tight">
+                {{H1_TITLE}}</h1>
+            <p class="text-sm text-gray-500">Published {{DISPLAY_DATE}}</p>
+        </header>
+
+        <img src="{{HERO_IMAGE}}" alt="{{HERO_ALT}}" class="w-full h-auto rounded-2xl mb-10" loading="eager">
+
+        <div class="prose prose-lg max-w-none">
+            {{INTRO_PARAGRAPH}}
+            {{BODY_HTML}}
+        </div>
+
+        <section class="bg-white rounded-2xl p-8 md:p-10 mt-16 text-center">
+            <h2 class="text-2xl font-cormorant font-medium mb-3 text-brand-heading">Explore the Heritage Collection</h2>
+            <p class="text-gray-600 mb-6">Shop handcrafted Punjabi suits, Phulkari dupattas, juttis and kundan
+                jewellery.</p>
+            <a href="../index.html#shop" class="btn-primary py-3 px-10 rounded-full inline-block">SHOP COLLECTION</a>
+        </section>
+    </article>
+
+
+    <footer class="bg-[var(--color-bg)] border-t border-gray-200/80 mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="font-cormorant text-xl mb-3 text-brand-heading">Shop</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="../category/apparel.html" class="hover:text-brand-heading">Punjabi Suits</a></li>
+                        <li><a href="../category/dupattas.html" class="hover:text-brand-heading">Phulkari Dupattas</a>
+                        </li>
+                        <li><a href="../category/jewellery.html" class="hover:text-brand-heading">Kundan Jewellery</a>
+                        </li>
+                        <li><a href="../category/footwear.html" class="hover:text-brand-heading">Punjabi Juttis</a></li>
+                        <li><a href="../category/accessories.html" class="hover:text-brand-heading">Shawls &
+                                Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-cormorant text-xl mb-3 text-brand-heading">Learn</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="../journal/index.html" class="hover:text-brand-heading">The Journal</a></li>
+                        <li><a href="../journal/history-of-phulkari.html" class="hover:text-brand-heading">History of
+                                Phulkari</a></li>
+                        <li><a href="../journal/how-to-style-patiala-suit.html" class="hover:text-brand-heading">Styling
+                                Guide</a></li>
+                        <li><a href="../journal/jutti-care-guide.html" class="hover:text-brand-heading">Jutti Care
+                                Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-cormorant text-xl mb-3 text-brand-heading">About</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="../index.html#about" class="hover:text-brand-heading">Our Story</a></li>
+                        <li><a href="../index.html#contact" class="hover:text-brand-heading">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200/80 pt-6 text-center text-xs text-gray-500">
+                <p>&copy; 2025 Pehnawa Panjab. All Rights Reserved. Handcrafted Punjabi heritage fashion.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
