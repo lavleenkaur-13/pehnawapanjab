@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- ============ HOMEPAGE ============ -->
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en-in" href="https://lavleenkaur-13.github.io/pehnawapanjab/"/>
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://lavleenkaur-13.github.io/pehnawapanjab/"/>
+        <xhtml:link rel="alternate" hreflang="en-ca" href="https://lavleenkaur-13.github.io/pehnawapanjab/"/>
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://lavleenkaur-13.github.io/pehnawapanjab/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lavleenkaur-13.github.io/pehnawapanjab/"/>
+    </url>
+
+    <!-- ============ HOMEPAGE SECTIONS ============ -->
+    <url><loc>https://lavleenkaur-13.github.io/pehnawapanjab/#shop</loc><lastmod>2026-05-12</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://lavleenkaur-13.github.io/pehnawapanjab/#about</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://lavleenkaur-13.github.io/pehnawapanjab/#contact</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+    <!-- ============ CATEGORY PAGES (Phase 3) ============ -->
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/category/apparel.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/category/jewellery.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/category/dupattas.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/category/footwear.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/category/accessories.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- ============ BLOG / JOURNAL (Phase 3) ============ -->
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/journal/</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/journal/history-of-phulkari.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/journal/how-to-style-patiala-suit.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/journal/jutti-care-guide.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ============ PRODUCT PAGES (Phase 2 — 12 products) ============ -->
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/amritsari-kundan-set.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://lavleenkaur-13.github.io/pehnawapanjab/amritsarikundanset.png</image:loc>
+            <image:title>Amritsari Kundan Set</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/maharani-patiala-suit.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://lavleenkaur-13.github.io/pehnawapanjab/maharanipatialasuit.png</image:loc>
+            <image:title>Maharani Patiala Suit</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/nawabi-sherwani-jutti.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://lavleenkaur-13.github.io/pehnawapanjab/NawabiSherwaniJutti.png</image:loc>
+            <image:title>Nawabi Sherwani Jutti</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/royal-phulkari-shawl.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://lavleenkaur-13.github.io/pehnawapanjab/royalphulkarishawl.png</image:loc>
+            <image:title>Royal Phulkari Shawl</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/golden-zari-dupatta.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/heritage-kundan-earrings.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/classic-punjabi-jutti.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/mirror-work-kurti.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/handwoven-phulkari-dupatta.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://lavleenkaur-13.github.io/pehnawapanjab/HandwovenPhulkariDupatta.png</image:loc>
+            <image:title>Handwoven Phulkari Dupatta</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/royal-wedding-lehenga.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://lavleenkaur-13.github.io/pehnawapanjab/royalweddinglehnga%20(2).png</image:loc>
+            <image:title>Royal Wedding Lehenga</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/pearl-kada-bangle-set.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lavleenkaur-13.github.io/pehnawapanjab/products/velvet-shawl-embroidered.html</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>

@@ -1,0 +1,356 @@
+:root {
+    --color-bg: #F5F2ED;
+    --color-text: #6B5F58;
+    --color-heading: #4C403A;
+    --color-accent: #BCA89F;
+    --color-border: #EAE5E0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    letter-spacing: 0.5px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-cormorant {
+    color: var(--color-heading);
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-heading);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.product-card {
+    transition: opacity 0.4s ease;
+}
+
+.product-card:hover {
+    opacity: 0.85;
+}
+
+.product-card img {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navigation underline */
+.nav-link.active {
+    color: var(--color-heading);
+    font-weight: 600;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-heading);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+#product-grid {
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+
+/* Cart Styling */
+#cart {
+    min-height: 70vh;
+    background-color: var(--color-bg);
+}
+
+#cart h2 {
+    color: var(--color-heading);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#cart-items {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cart-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.quantity-controls button {
+    background-color: var(--color-border);
+    color: var(--color-heading);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: var(--color-accent);
+    color: white;
+    transform: scale(1.05);
+}
+
+.quantity-controls button:active {
+    transform: scale(0.95);
+}
+
+.quantity-controls span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+.remove-item {
+    color: #D97777;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.remove-item:hover {
+    color: #B85555;
+    text-decoration: none;
+}
+
+.item-total {
+    font-weight: 600;
+    color: var(--color-heading);
+    font-size: 1.1rem;
+}
+
+#cart-summary {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#cart-summary .summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+#cart-summary .summary-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#cart-summary .total-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#cart-summary .total-amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-heading);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.empty-cart p {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.continue-shopping {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #product-grid {
+        row-gap: 2rem;
+        column-gap: 1rem;
+    }
+
+    #cart h2 {
+        font-size: 2rem;
+    }
+
+    .cart-item {
+        padding: 1rem;
+    }
+
+    .cart-item img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .quantity-controls {
+        gap: 0.5rem;
+    }
+
+    .quantity-controls button {
+        width: 28px;
+        height: 28px;
+    }
+
+    #cart-summary {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cart-item>div:first-child {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .cart-item img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.animate-fadeOut {
+    animation: fadeOut 0.3s ease-out;
+}
+
+#product-modal .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
